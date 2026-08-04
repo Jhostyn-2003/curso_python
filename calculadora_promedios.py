@@ -1,3 +1,4 @@
+# ejercicio 1: calculadora de promedios escolares
 def ingresar_calificaciones():
     """
     Solicita al usuario nombres de materias y sus calificaciones.
@@ -48,7 +49,10 @@ def ingresar_calificaciones():
             if continuar in ["n", "no"]:
                 return materias, calificaciones
 
-            print("Respuesta no válida. Escriba 's' para continuar o 'n' para terminar.")
+            print(
+                "Respuesta no válida. Escriba 's' para continuar o "
+                "'n' para terminar."
+            )
 
 
 def calcular_promedio(calificaciones):
@@ -82,8 +86,8 @@ def determinar_estado(calificaciones, umbral=5.0):
     aprobadas = []
     reprobadas = []
 
-    for indice in range(len(calificaciones)):
-        if calificaciones[indice] >= umbral:
+    for indice, calificacion in enumerate(calificaciones):
+        if calificacion >= umbral:
             aprobadas.append(indice)
         else:
             reprobadas.append(indice)
@@ -139,10 +143,10 @@ def main():
 
     print("\nMaterias y calificaciones:")
 
-    for indice in range(len(materias)):
+    for indice, materia in enumerate(materias, start=1):
         print(
-            f"{indice + 1}. {materias[indice]}: "
-            f"{calificaciones[indice]:.2f}"
+            f"{indice}. {materia}: "
+            f"{calificaciones[indice - 1]:.2f}"
         )
 
     print(f"\nPromedio general: {promedio:.2f}")
