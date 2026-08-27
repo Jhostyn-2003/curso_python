@@ -128,3 +128,6 @@ trabajo4_visualizacion.ipynb
 ```
 
 El archivo `trabajo4.md` sirve como documentación del trabajo, mientras que el `.ipynb` es el archivo que contiene el análisis y las visualizaciones ejecutables.
+
+## Resumen global
+El proyecto cumple de forma sobresaliente todos los requisitos planteados. Se utiliza correctamente el dataset superstore_dataset2012.csv, se realiza una exploración y preparación adecuada de los datos con Pandas (incluyendo conversión de fechas y tipos numéricos), y se implementa un conjunto completo de visualizaciones con Matplotlib y Seaborn: univariantes, bivariantes y multivariantes. Además, se organiza una figura con cuatro subplots bien estructurados, se personalizan los gráficos con títulos, etiquetas y estilos apropiados, y se guarda al menos una figura como archivo de imagen. El notebook incluye comentarios y conclusiones claras para cada visualización, explicando qué aporta cada una al análisis. En conjunto, el trabajo es coherente, robusto y va incluso más allá de los mínimos exigidos, manteniendo un buen equilibrio entre código, visualización y explicación textual.
