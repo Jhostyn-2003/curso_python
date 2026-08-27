@@ -1,87 +1,141 @@
-# Curso Python
+# Curso de Python para Certificacion
 
-Repositorio de ejercicios de Python para practicar.
+Repositorio academico con ejercicios, practicas y trabajos de evaluacion desarrollados durante el **Curso de Python**.
 
-## Estructura
+El proyecto recoge el aprendizaje progresivo del lenguaje: desde la sintaxis y la programacion estructurada hasta la programacion orientada a objetos, el analisis de datos y la visualizacion de informacion.
 
-- `calculadora_promedios.py`: implementacion del Ejercicio 1.
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-analisis%20numerico-013243?logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-manipulacion%20de%20datos-150458?logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-visualizacion-11557C)
+![Seaborn](https://img.shields.io/badge/Seaborn-graficos-4C72B0)
 
-## Ejercicio 1: Trabajo 1 - Sintaxis Python
+## Indice
 
-Archivo de referencia: `calculadora_promedios.py`
+- [Curso de Python para Certificacion](#curso-de-python-para-certificacion)
+  - [Indice](#indice)
+  - [Objetivos](#objetivos)
+  - [Trabajos practicos](#trabajos-practicos)
+    - [Trabajo 1: Sintaxis Python](#trabajo-1-sintaxis-python)
+    - [Trabajo 2: Programacion Orientada a Objetos](#trabajo-2-programacion-orientada-a-objetos)
+    - [Trabajo 3: Analisis de datos con NumPy y Pandas](#trabajo-3-analisis-de-datos-con-numpy-y-pandas)
+    - [Trabajo 4: Visualizacion de datos](#trabajo-4-visualizacion-de-datos)
+  - [Temario y ejercicios](#temario-y-ejercicios)
+  - [Estructura del repositorio](#estructura-del-repositorio)
+  - [Instalacion y ejecucion](#instalacion-y-ejecucion)
+  - [Tecnologias](#tecnologias)
+  - [Autor](#autor)
 
-### Que hay que hacer
+## Objetivos
 
-Desarrollar una calculadora de promedios escolares en Python utilizando variables, operadores, estructuras de control y funciones basicas.
+- Consolidar los fundamentos de Python y la escritura de codigo legible.
+- Aplicar estructuras de control, funciones, colecciones y manejo de excepciones.
+- Modelar problemas mediante clases, objetos, herencia y composicion.
+- Analizar datos con NumPy y Pandas mediante operaciones estadisticas y transformaciones.
+- Comunicar resultados mediante graficos creados con Matplotlib y Seaborn.
+- Mantener una organizacion de proyecto reproducible y facil de consultar.
 
-### Pasos a seguir
+## Trabajos practicos
 
-1. Crear un archivo Python llamado `calculadora_promedios.py` que contenga todo el codigo del programa.
+| Trabajo | Contenido | Archivo o carpeta principal |
+| --- | --- | --- |
+| **Trabajo 1** | Sintaxis Python y programacion estructurada | [`calculadora_promedios.py`](actividades/trabajo01_sintaxis_python/calculadora_promedios.py) |
+| **Trabajo 2** | Programacion Orientada a Objetos | [`sistema_inventario.py`](actividades/trabajo02_ProgramacionOrientadaObjetos/sistema_inventario.py) |
+| **Trabajo 3** | Analisis de datos con NumPy y Pandas | [`analisis_red_tiendas.ipynb`](actividades/trabajo03_AnalisisDatosConNumpyyPandas/python_intermedio/analisis_red_tiendas.ipynb) |
+| **Trabajo 4** | Visualizacion con Matplotlib y Seaborn | [`trabajo4_visualizacion.ipynb`](actividades/trabajo04_VisualizacionDatosConMatplotlibySeaborn/trabajo4_visualizacion.ipynb) |
 
-2. Implementar una funcion llamada `ingresar_calificaciones()` que permita al usuario introducir el nombre de una materia y su calificacion correspondiente. Esta funcion debe:
+### Trabajo 1: Sintaxis Python
 
-   - Solicitar al usuario que ingrese el nombre de la materia.
-   - Solicitar la calificacion, validando que sea un numero entre 0 y 10.
-   - Almacenar ambos datos en dos listas separadas (una para nombres y otra para calificaciones).
-   - Preguntar si desea continuar ingresando mas materias.
-   - Retornar ambas listas cuando el usuario decida terminar.
+Calculadora de promedios escolares desarrollada con programacion estructurada. Permite registrar materias y calificaciones, validar entradas, calcular el promedio, clasificar resultados y localizar las calificaciones maxima y minima.
 
-3. Crear una funcion `calcular_promedio(calificaciones)` que reciba una lista de calificaciones y devuelva el promedio de todas ellas.
-4. Desarrollar una funcion `determinar_estado(calificaciones, umbral)` que reciba la lista de calificaciones y un valor umbral (por defecto 5.0), y devuelva dos listas: una con los indices de las materias aprobadas y otra con los indices de las reprobadas.
-5. Implementar una funcion `encontrar_extremos(calificaciones)` que identifique el indice de la calificacion mas alta y el indice de la mas baja en la lista de calificaciones.
-6. En la funcion principal (`main`), llamar a `ingresar_calificaciones()` para obtener los datos del usuario.
-7. Utilizar las funciones creadas para calcular el promedio general, determinar materias aprobadas/reprobadas y encontrar las materias con calificaciones extremas.
+### Trabajo 2: Programacion Orientada a Objetos
 
-8. Mostrar un resumen final que incluya:
+Sistema de inventario en consola basado en las clases `Producto` e `Inventario`. Incluye validaciones, busqueda por nombre, listado de productos, calculo del valor total y manejo de excepciones.
 
-   - Todas las materias con sus calificaciones.
-   - El promedio general.
-   - Las materias aprobadas y reprobadas.
-   - La materia con mejor calificacion y su valor.
-   - La materia con peor calificacion y su valor.
+### Trabajo 3: Analisis de datos con NumPy y Pandas
 
-9. Manejar casos especiales, como cuando no se ingresa ninguna materia, utilizando estructuras condicionales apropiadas.
-10. Finalizar el programa con un mensaje de despedida e implementar la estructura `if __name__ == "__main__":` para ejecutar la funcion principal.
+Notebook de analisis del caso **RetailNow**. Procesa ventas, inventarios y satisfaccion de clientes para obtener indicadores por producto y tienda, estadisticas descriptivas, inventarios criticos, correlaciones y una simulacion reproducible de ventas futuras.
 
-### Requisitos
+### Trabajo 4: Visualizacion de datos
 
-- Crear un programa que permita al usuario ingresar nombres de materias y sus calificaciones correspondientes (valores entre 0 y 10).
-- Almacenar las materias y calificaciones en estructuras de datos adecuadas (listas).
-- Calcular y mostrar el promedio general de todas las calificaciones ingresadas.
-- Determinar que materias estan aprobadas y reprobadas segun un umbral definido (5.0).
-- Identificar y mostrar la materia con la calificacion mas alta y la mas baja.
-- Permitir al usuario agregar tantas materias como desee, con opcion para finalizar la entrada de datos.
-- Mostrar un resumen final con toda la informacion procesada de forma clara.
-- Utilizar exclusivamente programacion estructurada (sin clases ni POO).
-- Implementar al menos 3 funciones diferentes para organizar el codigo.
-- Incluir validacion basica de entradas para evitar errores.
+Notebook basado en el dataset `superstore_dataset2012.csv`. Incluye histogramas, boxplots, dispersion, regresion, mapa de correlaciones y una figura final con multiples subplots. Los resultados se guardan en `resultados/`.
 
-### Como se evalua
+## Temario y ejercicios
 
-Tu solucion se calificara segun estos criterios:
+La carpeta `test/` contiene ejercicios de practica organizados por bloques:
 
-1. Implementacion de funciones y estructura (30%)
-   Correcta implementacion de las funciones solicitadas (`ingresar_calificaciones`, `calcular_promedio`, `determinar_estado`, `encontrar_extremos`) y organizacion adecuada del codigo sin usar POO.
+| Tema | Contenidos principales |
+| --- | --- |
+| **Tema 1. Introduccion** | Bienvenida al curso y comprobacion de la version de Python |
+| **Tema 2. Tipos de datos y estructuras** | Tipos basicos, listas, tuplas, diccionarios, conjuntos y `collections` |
+| **Tema 3. Programacion basica** | Operadores, condicionales, bucles e iteracion de estructuras |
+| **Tema 4. Funciones y libreria estandar** | Funciones, argumentos, `lambda`, datos aleatorios y modulo `os` |
+| **Tema 5. Organizacion del codigo con POO** | Clases, objetos, atributos, metodos, herencia, composicion y modulos |
+| **Tema 6. Aspectos avanzados** | Excepciones, filtrado, transformacion, comprensiones, iteradores y generadores |
+| **Tema 7. Analisis de datos** | Arrays con NumPy y DataFrames, filtrado, combinacion, estadistica y tablas pivotantes |
+| **Tema 8. Visualizacion de datos** | Graficos univariantes, bivariantes y multivariantes con Matplotlib y Seaborn |
 
-2. Manejo de estructuras de datos (25%)
-   Uso adecuado de listas para almacenar y manipular las materias y calificaciones, incluyendo la correcta indexacion y acceso a los elementos.
+## Estructura del repositorio
 
-3. Calculos y logica (25%)
-   Implementacion correcta de los calculos de promedio, determinacion de aprobados/reprobados segun umbral, e identificacion de materias con calificacion maxima y minima.
+```text
+curso_python/
+├── actividades/
+│   ├── trabajo01_sintaxis_python/
+│   ├── trabajo02_ProgramacionOrientadaObjetos/
+│   ├── trabajo03_AnalisisDatosConNumpyyPandas/
+│   └── trabajo04_VisualizacionDatosConMatplotlibySeaborn/
+├── test/
+│   ├── tema1_introduccion/
+│   ├── tema2_Tipos_datos_estructuras/
+│   ├── tema3_programacion_basica/
+│   ├── tema4_Funciones&libreria_standard/
+│   ├── tema5_OrganizacionCodigoConOOP/
+│   ├── tema6_aspectosAvanzados/
+│   ├── tema7_AnalisisDatosConNumpy&Pandas/
+│   └── tema8_VisualizacionDatosConMatplotlibySeaborn/
+└── README.md
+```
 
-4. Validacion de entrada y manejo de errores (20%)
-   Validacion adecuada de las entradas del usuario (calificaciones entre 0 y 10, conversion de tipos) y manejo de posibles errores o casos especiales.
+## Instalacion y ejecucion
 
-### Tecnologias a utilizar
+Se recomienda utilizar un entorno virtual para aislar las dependencias:
 
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+```bash
+python -m venv .venv
+```
 
-Python
+En Windows PowerShell:
 
-## Proximos ejercicios
+```powershell
+.venv\Scripts\Activate.ps1
+```
 
-Este README quedo preparado para agregar nuevos ejercicios en secciones `## Ejercicio 2`, `## Ejercicio 3`, etc.
+En macOS o Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+Para ejecutar los trabajos escritos en Python:
+
+```bash
+python actividades/trabajo01_sintaxis_python/calculadora_promedios.py
+python actividades/trabajo02_ProgramacionOrientadaObjetos/sistema_inventario.py
+```
+
+Los trabajos 3 y 4 se ejecutan como notebooks desde Visual Studio Code o Jupyter, seleccionando el entorno virtual como kernel. Sus dependencias principales son `numpy`, `pandas`, `matplotlib` y `seaborn`.
+
+## Tecnologias
+
+- **Python 3.x**: lenguaje principal.
+- **NumPy**: calculo numerico y simulaciones.
+- **Pandas**: limpieza, transformacion y analisis de datos.
+- **Matplotlib**: visualizaciones personalizadas.
+- **Seaborn**: visualizaciones estadisticas.
+- **Jupyter Notebook**: desarrollo y presentacion de los analisis.
 
 ## Autor
 
-Jhostyn Gavilanbez
+**Jhostyn Gavilanbez**
+
+Repositorio desarrollado con fines academicos para la certificacion del Curso de Python.
