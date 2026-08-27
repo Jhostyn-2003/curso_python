@@ -136,6 +136,6 @@ Los trabajos 3 y 4 se ejecutan como notebooks desde Visual Studio Code o Jupyter
 
 ## Autor
 
-**Jhostyn Gavilanbez**
+**Jhostyn Gavilanez**
 
 Repositorio desarrollado con fines academicos para la certificacion del Curso de Python.
